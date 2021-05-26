@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>viagens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let p of Viagens; let i = index">
+    <img src={{p.imagem}} />
+    <ion-card-header>
+      <ion-card-subtitle>{{p.data}}</ion-card-subtitle>
+      <ion-card-title>{{p.local}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+     {{
+       p.descricao
+     }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
